@@ -1,0 +1,177 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;600;700&display=swap');
+
+* {
+  font-family: "Instrument Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.orders-page {
+  padding: 30px;
+  background: linear-gradient(135deg, #ffffff, rgb(253, 253, 204), rgb(248, 248, 160));
+  animation: bgFlow 10s infinite alternate;
+  width: 480px;
+}
+
+.orders-header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fb923c;
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.orders-title{
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.back-btnR{
+  position: absolute;
+  left: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.tabs button {
+  padding: 10px 20px;
+  border: 2px solid #fb923c;
+  border-radius: 25px;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fcd34d;
+  transition: 0.3s;
+}
+
+.tabs button.active,
+.tabs button:hover {
+  background: #fcd34d;
+  color: white;
+}
+
+/* Orders List */
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Order Card */
+.order-card {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+    border: 1px solid #fb923c;
+  box-shadow: 0 6px 18px #8d8d8d8d;
+  transition: transform 0.3s;
+}
+
+.order-card:hover {
+  transform: translateY(-5px);
+}
+
+.order-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.order-title h3 {
+  font-size: 18px;
+  color: #341539;
+}
+
+.status {
+  padding: 6px 14px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.status.normal {
+  background: #fb923c;
+  color: #341539;
+}
+
+.status.finish {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* Order Card Body */
+.order-body {
+  background: #fff;
+  padding: 1rem 1.25rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+/* Each Row */
+.order-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #e5e7eb;
+  padding-bottom: 0.5rem;
+}
+
+.order-row:last-child {
+  border-bottom: none;
+}
+
+/* Labels */
+.order-label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+/* Values */
+.order-value {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #2563eb;
+}
+
+
+/* Details Button */
+.details-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 16px;
+  background: #fb923c;
+  color: white;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.details-btn:hover,
+.details-btn:active {
+  background: #ffb84d;
+  color: #000;
+}

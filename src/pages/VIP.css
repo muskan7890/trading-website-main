@@ -1,0 +1,149 @@
+
+.vip-page {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 480px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #ffffff, rgb(253, 253, 204), rgb(248, 248, 160));
+  animation: bgFlow 10s infinite alternate;
+  color: #341439;
+  padding: 12px;
+  font-family: "Instrument sans", sans-serif;
+  overflow-x: hidden;
+  padding-top: 60px;
+}
+
+@media (min-width: 480px) {
+  .vip-page {
+    max-width: 480px;
+    margin: auto;
+  }
+}
+
+/* Header */
+.vip-header {
+  width: 100%;
+  max-width: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: #fde38d;
+  padding: 12px;
+  box-sizing: border-box;
+  color: black;
+  z-index: 10;
+}
+
+.back-btn {
+  position: absolute;
+  left: 12px;
+  background: transparent;
+  border: none;
+  color: black;
+  font-size: 24px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.back-btn:hover {
+  transform: scale(1.2);
+}
+
+.vip-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0;
+  text-align: center;
+}
+
+/* VIP Cards */
+.vip-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.vip-card {
+  background: #ffffff;
+  border: 1px solid rgb(255, 255, 161);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgb(245, 245, 165);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.vip-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 16px rgb(255, 204, 110);
+}
+
+/* Responsive text scaling */
+.vip-card p {
+  font-size: clamp(12px, 3.5vw, 14px);
+  line-height: 1.5;
+}
+
+/* Badge animations */
+.vip-badge {
+  font-weight: bold;
+  font-size: 13px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  display: inline-block;
+  margin-bottom: 6px;
+  animation: popIn 0.5s ease;
+}
+@keyframes popIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+/*unique badge colors*/
+
+.badge-v0{
+    background: #fbbf24;
+    color: #1e3a8a;
+}
+
+.badge-v1{
+    background: #60a5fa;
+    color: #0c4a6e;
+}
+
+.badge-v2{
+    background: #91d9fa;
+    color: #083344;
+}
+
+.badge-v3{
+    background: #f59;
+    color: #064e3b;
+}
+
+.badge-v4{
+    background: #a855f7;
+    color: #3b0764;
+}
+
+.badge-v5{
+    background: #22c55e;
+    color: #064e3b;
+}
+
+.badge-v6{
+    background: #ef4444;
+    color: #450a0a;
+}
+
+.badge-v7{
+    background: #eab308;
+    color: #713f12;
+}
+
+.badge-v8{
+    background: #10b981;
+    color: #064e3b;
+}
